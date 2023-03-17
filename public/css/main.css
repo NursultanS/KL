@@ -1,5 +1,6 @@
 html{
     background-image:url("/img/background1.png");
+    font-family: 'Open Sans', sans-serif;
 }
 ul.nav {
     list-style-type: none;
