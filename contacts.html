@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Руководство</title>
+    <link rel="stylesheet" href="css/contacts.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [51.13105290286117, 71.4236419019682],
+                zoom: 16
+            });
+            DG.marker([51.13105290286117, 71.4236419019682]).addTo(map).bindPopup('ТОО «Қамқор Локомотив»');
+        });
+    </script>
+</head>
+<body>
+<ul class="nav">
+    <img src="img/logo.png" class="log" width="100" height="47" alt="">
+    <li class="bot"><a  href="/">О предприятии</a></li>
+    <li class="bot"><a href="provisions">Оказываемые услуги</a></li>
+    <li class="bot"><a  href="guide">Руководство</a></li>
+    <li class="bot"><a class="active" href="contacts">Контакты</a></li>
+</ul>
+<div id="map" style="height:400px"></div>
+<footer>
+    <div class="foot" >
+        <p class="ftext" >Телефон:</p>
+        <hr/>
+        <a class="ftext"  href="tel:87172612110" >8-7172-612-110</a>
+    </div>
+    <div class="foot" >
+        <p class="ftext">Адрес:</p>
+        <hr/>
+        <a class="ftext" href="https://go.2gis.com/ybp6f4">г. Нур-Султан, ул. Кунаева, 10, 18 этаж</a>
+    </div>
+    <div class="foot" >
+        <p class="ftext">E-mail:</p>
+        <hr/>
+        <a class="ftext" href="mailto:kamkor.lokomotiv@mail.ru">kamkor.lokomotiv@mail.ru</a>
+    </div>
+    <div class="foot" >
+        <p class="ftext">Соц.Сети:</p>
+        <hr/>
+        <a class="ftext" href="https://www.instagram.com">Instagram</a>
+    </div>
+
+</footer>
+</body>
+</html>
